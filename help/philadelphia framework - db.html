@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head>
+    <meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Lang" content="en">
+    <meta name="author" content="">
+    <meta http-equiv="Reply-to" content="@.com">
+    <meta name="generator" content="PhpED 5.8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="creation-date" content="01/01/2009">
+    <meta name="revisit-after" content="15 days">
+    <title>Краткое описание Philadelphia Framework</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <!-- jQuery & QUnit -->
+    <script type="text/javascript" src="scripts/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="scripts/qunit.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/shThemeDefault.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/shCore.css"/>
+
+    <!-- SyntaxHighlighter -->
+    <script type="text/javascript" src="scripts/sh/shCore.js"></script>
+    <script type="text/javascript" src="scripts/sh/shBrushDelphi.js"></script>
+
+    <script type="text/javascript">
+
+
+        jQuery().ready(function(){
+            SyntaxHighlighter.all();
+            
+            
+            function initAllSamples(){
+                
+                
+                $(".sample").each(function (i){
+                    var sampleBlock = $(this);
+                    var sampleDivId = sampleBlock.attr("title");
+                    var codeBlock = $("#" + sampleDivId);
+                
+                    
+                    codeBlock.css({
+                        display: "block"
+                    });
+                    
+                    sampleBlock.click(function() {
+                        codeBlock.toggle();
+                    });
+                });
+                       
+            }
+            
+           
+           initAllSamples(); 
+        });
+
+    </script>
+
+    </head>
+<body>
+  <div id="root">
+    <div>
+        <h2>Общая концепция <strong style="color: green;">Philadelphia Framework</strong></h2>
+    </div>
+    <div class="content">
+        При разработке <strong>framework'а</strong> основной упор был сделан на возможность повторного использования кода и быстрой заменой одного элемента проекта на другой, декомпозиции всего проекта на составные части. Также была рассмотрена возможность применения шаблона <strong>Model View Controller</strong>.
+        <br />
+        <br />
+        Основной задачей <strong>framework'а</strong> является быстрое построение клиент-серверных приложений с использованием различных <strong>СУБД</strong>.
+        
+        <br />
+        <br />
+        
+        Для решения поставленных задач, была заимствована концепция, которая присутствует в <a href="https://doc.qt.io/archives/qt-4.7/index.html">Qt framework'е </a>. К сожалению, в сегодняшней реализации языка <strong>Delphi</strong> (на момент <strong>20.09.2012</strong>) отсутствует возможность подключения одного события (<strong>native Delphi event</strong>) к множеству обработчиков. Поэтому было принято решение реализовать данную возможность в виде <strong>signal/slot</strong> архитектуры.
+        <br/>
+        <br/>
+        Роль <strong>signal</strong> выполняет обычный <strong>native Delphi event</strong>, т.е. все переменные объявленные как <strong>procedure/function of object</strong>. В качестве <strong>slot</strong> используется любой метод, объявленный в секции <strong>published</strong>.
+        <br />
+        <br />
+
+        Существует два режима отсоединения <strong>slot'ов</strong>:
+        
+        <ul>
+            <li> в ручном режиме - программист сам должен контролировать процесс отсоединения <strong>slot'ов</strong> от <strong>signal'ов</strong>, с помощью процедуры <strong>disconnect</strong></li>
+            <li> в атоматическом режиме </li>
+        </ul>
+        
+        <br />
+        <br />
+
+        <span class="sample" title="slotSample">Пример создания <strong>slot'ов</strong>...</span>
+
+        <div id="slotSample" class="code highlighted rounded" style="width: 500px">
+            <pre class='brush: delphi; gutter: false;'>
+...
+published
+    {$REGION 'SLOTS'}
+    procedure slot1(aSender: tObject);
+    procedure slot2(aSender: tObject);
+    {$ENDREGION}
+end;
+...           
+implementation
+...
+procedure cSomeClass.setupEvents;
+begin
+  //Подключаем к native Delphi event 2 slot'а
+  connect(ui.someButton, 'onClick', self, 'slot1');
+  connect(ui.someButton, 'onClick', self, 'slot2');
+end;
+
+...
+
+{$REGION 'SLOTS'}
+procedure cSomeClass.slot1(aSender: tObject);
+begin
+  //выполняем какие-то действия
+end;
+
+procedure cSomeClass.slot2(aSender: tObject);
+begin  
+  //выполняем какие-то действия
+end;
+
+{$ENDREGION}
+            </pre>
+        </div>
+        <br />
+
+        <br />
+        <br />
+        <br />
+    
+        При анализе архитектуры <strong>Model View Controller</strong>, было выявлено, что при использовании <strong>controller'а</strong> код приложения будет громоздким и менее читабельным. Поэтому, из <strong>Qt Framework</strong> был заимствован шаблон <strong>MVD</strong>.
+        
+        <br />
+        <br />
+    
+        <strong>MVD</strong> - model view delegate, шаблон проектирования, в котором существует три участника: модель, представление и делегат.
+        <br />
+        <br />
+        <strong>Модель</strong> - набор данных, который реализует доступ к определенным сущностям, обычно модель выносится в отдельный модуль.
+        <br />
+        <strong>Представление</strong> - в данном случае - это <strong>proxy</strong> (прослойка) класс, который предоставляет доступ к <strong>native Delphi</strong> компонентам (edit, comboBox, treeView, grid, и т.д.).
+        <br />
+        <br />
+        Для представлений в <strong>framework'е</strong> существуют наборы <strong>proxy</strong> классов, которые являются посредниками между обычными <strong>native Delphi</strong> компонентами и <strong>proxy</strong> классами.
+        <br />
+        Такой подход был выбран для быстрой смены <strong>native Delphi</strong> компонентов на другие.
+        <br />
+        <br />
+        <strong>Делегат</strong> - служит точкой для двустороннего обмена данными, модель - представление (см. рисунок, делегат вызвал метод <strong>createEditor</strong>, для поля "Имя"), обычно выносится в отельный модуль. Делегат может быть установлен как для всей таблицы/дерева, так и для отдельной колонки, строки и ячейки.
+        <br />
+        <img src="images/delegateSample.jpg" />
+        
+        <br />
+        <br />
+        <br />
+    
+        На сегодняшний день (<strong>20.09.2012</strong>) <strong>framework</strong> содержит в себе более <strong>200</strong> классов, которые помогают пользователю при разработке приложения.
+        <br />
+        <br />
+    
+    </div>
+    
+    <div>
+        <h2>Использование <strong>framework'а</strong> при разработке приложений, работающих с <strong>БД</strong></h2>
+    </div>
+
+    <div  class="content">
+        
+        Для подключения к базам данных в <strong>framework'е</strong> существует специальный класс <strong>singleton</strong> - <strong>cSQLDatapoints</strong>, который содержит в себе все необходимые подключения, создаваемые пользователем. Поскольку пользователь, обычно, работает всего с одним подключением к <strong>БД</strong>, в классе существует понятие  текущего соединения. Также при создании подключения возможно указать драйвер, используемый при подключении к <strong>БД</strong>.
+        <br />
+        <br />
+        Рассмотрим <span class="sample" title="SQLiteDatapointSample">пример создания подключения к <strong>БД</strong> <strong>SQLite</strong>...</span>
+
+        <div id="SQLiteDatapointSample" class="code highlighted rounded" style="width: 600px">
+            <pre class='brush: delphi; gutter: false;'>
+var              
+  SQLDatapoints: cSQLDatapoints;
+begin
+  SQLDatapoints:= cSQLDatapoints.getInstance;
+                               
+  //драйвер, имя точки данных
+  clientsDb:= SQLDatapoints.createConnection(drvSQLite, 'demo');
+  clientsDb.setDatabase('demo.sqlite');
+
+  clientsDb.open;
+end;                          
+            </pre>
+        </div>
+        <br />
+        <br />
+
+        <span class="sample" title="postgresDatapointSample">пример создания подключения к <strong>БД</strong> <strong>PostgreSQL</strong>...</span>
+
+        <div id="postgresDatapointSample" class="code highlighted rounded" style="width: 600px">
+            <pre class='brush: delphi; gutter: false;'>
+var              
+  SQLDatapoints: cSQLDatapoints;
+  rheaDB: cAbstractSQLConnection;
+begin
+  SQLDatapoints:= cSQLDatapoints.getInstance;
+
+  //драйвер, имя точки данных
+  rheaDB:= SQLDatapoints.createConnection(drvPGSQL, 'rhea');
+  rheaDB.setDatabase('rhea');
+  rheaDB.setHost('localhost');
+  rheaDB.setPort(5432);
+
+  rheaDB.setUserName('userName');
+  rheaDB.setPassword('password');
+
+  rheaDB.open;
+end;                          
+            </pre>
+        </div>
+        <br />
+        <br />
+        
+
+        Рассмотрим пример создания модели, представления, делегата.
+        <br />
+
+        Для модели таблицы <strong>БД</strong> существует возможность простого описания и с использованием <strong>ORM</strong>, обычно при использовании <strong>ORM</strong> подхода модель выносится в отдельный модуль.
+        <br />
+        <br />
+        <span class="sample" title="simpleModelSample">Пример создания модели без <strong>ORM</strong>...</span>
+
+        <div id="simpleModelSample" class="code highlighted rounded" style="width: 600px">
+            <pre class='brush: delphi; gutter: false;'>
+var
+  SQLTableModel: cSQLTableModel;
+begin
+  SQLTableModel:= cSQLTableModel.create;
+  with SQLTableModel do begin
+    setRowClass(cSQLStdTableRow);
+                       
+    setTableName('clients');
+    setSelectCommand('select id, name, description, balance from clients');
+                      
+    //имя поля в БД, заголовок поля, только чтение, сортировка
+    addField('id'                 , 'Код'                 , false);
+    addField('name'               , 'Имя'                 , false, sdAsc);
+    addField('description'        , 'Описание'            , false);
+    addField('balance'            , 'Баланс'              , false);
+
+    setKeyField('id');
+
+    //устанавливаем нужное соединение
+    setConnection(cSQLDatapoints.getInstance.getCurrentConnection);
+  end;
+end;                                    
+            </pre>
+        </div>
+
+        <br />
+        
+        <span class="sample" title="ormModelSample">Пример создания модели с <strong>ORM</strong> в отдельном модуле...</span>
+
+        <div id="ormModelSample" class="code highlighted rounded" style="width: 600px">
+            <pre class='brush: delphi; gutter: false;'>
+unit clsClients;
+
+interface
+uses
+  classes,
+  sysUtils,
+  variants,
+
+  uModels,
+
+  clsSQLDatapoints,
+  clsAbstractTableModel,
+  clsSQLTableModel;
+
+type
+  //необходимо описать каркас для полей таблицы clients
+  //в простом случае никакого кода не требуется
+  cClient = class(cSQLTableRow)
+  private
+    fName              : string;
+    fDescription       : string;
+    fBalance           : currency;
+  published
+    property name: string read fName write fName;
+    property description: string read fDescription write fDescription;
+    property balance: currency read fBalance write fBalance;
+  end;
+
+  //класс-владелец строк таблицы clients
+  cClients = class(cSQLTableModel)
+  public
+    constructor create; override;
+  end;
+
+implementation
+
+{ cClients }
+
+constructor cClients.create;
+begin
+  inherited create;
+  setRowClass(cClient);
+
+  setTableName('clients');
+        
+  setSelectCommand('select id, name, description from clients');
+
+  //включаем возможность выбирать строки в модели
+  enableSelector(true);
+
+  //имя поля в БД, заголовок поля, только чтение, сортировка
+  addField('id'                 , 'Код'                 , false);
+  addField('name'               , 'Имя'                 , false, sdAsc);
+  addField('description'        , 'Описание'            , false);
+  addField('balance'            , 'Баланс'              , false);
+
+  setKeyField('id');
+
+  setConnection(cSQLDatapoints.getInstance.getCurrentConnection);
+end;
+
+end.
+            </pre>
+        </div>
+
+
+
+        <br />
+        
+        
+        Для <strong>SQL</strong> модели, которая была создана через <strong>ORM</strong> вариант, существует возможность работать со строкой <strong>БД</strong> с помощью шаблона <strong>active record</strong>.
+        <br />
+        <br />
+        <span class="sample" title="activeRecordSample">Пример создания active record...</span>
+
+        <div id="activeRecordSample" class="code highlighted rounded" style="width: 500px">
+            <pre class='brush: delphi; gutter: false;'>
+var
+  clientRecord: cClient;
+begin
+  clientRecord:= clientsModel.createActiveRecord as cClient;
+  try
+    //выбираем клиента с ключом 110, либо передаем condition
+    clientRecord.fetch(110);
+
+    clientRecord.name:= 'новое имя';
+    clientRecord.description:= 'новое описание';
+    clientRecord.balance:= 10;       
+
+    //обновляем запись в БД
+    clientRecord.update;
+  finally
+    freeAndNil(clientRecord);
+  end;
+
+end;
+                   </pre>
+        </div>
+
+        <br />
+        
+
+        <span class="sample" title="viewSample">Пример создания представления...</span>
+
+        <div id="viewSample" class="code highlighted rounded" style="width: 500px">
+            <pre class='brush: delphi; gutter: false;'>
+    uses
+      clsTableViewProxy;  
+
+    ...
+    property clientsGridProxy: cTableViewProxy read fClientsGridProxy; 
+    ...
+
+    implementation
+
+    ...
+    procedure cSomeUiClass.createViewProxies;
+    begin
+      fClientsGridProxy:= cTableViewProxy.create;
+      //установка native Delphi компонента
+      //в данном случае gClients - класс tKGrid
+      clientsGridProxy.setView(gClients);
+    end;
+    ...
+            
+    procedure cSomeClass.setupViewProxies;
+    begin
+      with ui.clientsGridProxy, clientsModel.getFields do begin
+        setModel(clientsModel);
+        
+        render;
+
+        setColVisible(modelColToViewCol(indexOfName('id')), true);
+        setDefaultColsWidth;
+        setColWidth(modelColToViewCol(indexOfName('selector')), 20);
+        setSortable(true);
+      end;
+
+    end;
+            
+            
+    ...     
+    procedure cSomeClass.removeViewProxies;
+    begin          
+      if assigned(fClientsGridProxy) then begin
+        freeAndNil(fClientsGridProxy);
+      end;
+    end;
+            </pre>
+        </div>
+
+        <br />
+        
+        <span class="sample" title="delegateSample">Пример создания делегата...</span>
+
+        <div id="delegateSample" class="code highlighted rounded" style="width: auto">
+            <pre class='brush: delphi; gutter: false;'>
+unit clsClientsDelegate;
+
+interface
+uses
+  dialogs,
+  stdCtrls,
+  controls,
+  sysUtils,
+  classes,
+  windows,   
+  variants,
+  extCtrls,
+  extDlgs,
+
+
+  uModels,
+
+
+  clsVariantConversion,
+
+  clsMemoViewProxy,
+  clsAbstractEditableViewProxy,
+
+  clsAbstractTableViewProxyDelegate,
+
+  clsAbstractTableModel,
+  clsTableViewProxy;
+
+type
+  cClientsDelegate = class(cAbstractTableViewProxyDelegate)
+  private
+    fEditorProxy  : cMemoViewProxy;
+  public
+    constructor create; virtual;
+    destructor  destroy; override;
+  public
+    function    canCreateEditor(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aDefaultCanCreateEditor: boolean): boolean; override;
+
+    function    createEditor(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aType: tDataType): cAbstractEditableViewProxy; override;
+    procedure   destroyEditor(aView:cTableViewProxy; aEditor: cAbstractEditableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aType: tDataType); override;
+
+
+    procedure   getEditorData(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aAssignedValue: variant); override;
+    procedure   setEditorData(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aAssignedValue: variant); override;
+    procedure   updateEditorGeometry(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aRect: tRect); override;
+  end;
+
+implementation
+
+{ cClientsDelegate }
+
+constructor cClientsDelegate.create;
+begin
+  inherited create;
+end;
+
+destructor cClientsDelegate.destroy;
+begin
+  inherited;
+end;
+
+function cClientsDelegate.canCreateEditor(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aDefaultCanCreateEditor: boolean): boolean;
+begin
+  result:= true;
+end;
+
+function cClientsDelegate.createEditor(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aType: tDataType): cAbstractEditableViewProxy;
+begin
+  fEditorProxy:= cMemoViewProxy.create;
+  fEditorProxy.setView(tMemo.create(nil));
+
+  result:= fEditorProxy;
+end;
+
+
+procedure cClientsDelegate.destroyEditor(aView: cTableViewProxy; aEditor: cAbstractEditableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aType: tDataType);
+begin
+  aView.defaultDestroyEditor(aEditor, aType);
+end;
+
+
+procedure cClientsDelegate.getEditorData(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aAssignedValue: variant);
+begin
+  aModel.setFieldData('description', aModelRow, aEditor.getValue);
+end;        
+
+procedure cClientsDelegate.setEditorData(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aAssignedValue: variant);
+begin
+end;
+
+
+procedure cClientsDelegate.updateEditorGeometry(aView: cTableViewProxy; aViewCol, aViewRow: integer; aModel: cAbstractTableModel; aModelCol, aModelRow: integer; aEditor: cAbstractEditableViewProxy; var aRect: tRect);
+begin
+  inherited updateEditorGeometry(aView, aViewCol, aViewRow, aModel, aModelCol, aModelRow, aEditor, aRect);
+
+  aRect.right:= aRect.left + 200;
+  aRect.bottom:= aRect.top + 100;
+end;
+
+end.
+            </pre>
+        </div>
+
+        <br />
+        
+        <span class="sample" title="setDelegateSample">Пример присвоения делегата колонке...</span>
+
+        <div id="setDelegateSample" class="code highlighted rounded" style="width: 500px">
+            <pre class='brush: delphi; gutter: false;'>
+procedure cSomeClass.createDelegates;
+begin
+  with ui.clientsGridProxy, clientsModel do begin
+      setColDelegate(
+        modelColToViewCol(getFields.indexOfName('description')),
+        cClientsDelegate.create
+      );
+  end;
+  
+end;             </pre>
+        </div>
+
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011.04.29 14:37:04.498.dproj,C:\Users\maravan\Documents\RAD Studio\Projects\Package1.dproj=D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dproj</Transaction>
+    <Transaction>2011.04.29 14:52:09.753.pas,D:\Projects\Delphi\100 media\core\classes\packages\Unit1.pas=D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerView.pas</Transaction>
+    <Transaction>2011.04.29 16:06:31.360.pas,D:\Projects\Delphi\100 media\core\classes\packages\Unit1.pas=D:\Projects\Delphi\100 media\core\classes\packages\registerPackage.pas</Transaction>
+    <Transaction>2011.04.29 16:06:50.910.pas,D:\Projects\Delphi\100 media\core\classes\packages\registerPackage.pas=D:\Projects\Delphi\100 media\core\classes\packages\uRegisterPackage.pas</Transaction>
+    <Transaction>2011.04.30 11:54:59.782.pas,D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerView.pas=D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerWidget.pas</Transaction>
+    <Transaction>2012.01.23 21:20:48.820.pas,D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTableViewProxyColumnsVisibilityEditorWidget.pas=</Transaction>
+    <Transaction>2012.01.23 21:20:48.828.dfm,D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTableViewProxyColumnsVisibilityEditorWidget.dfm=</Transaction>
+    <Transaction>2012.09.29 15:37:06.752.pas,D:\Projects\Delphi\100 media\core\resources\clsResources.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\..\..\100 media"/>
+    <File Path="..\..\..\application classes"/>
+    <File Path="..\..\..\application classes\components"/>
+    <File Path="..\..\..\application classes\components\widgets"/>
+    <File Path="..\..\..\application classes\components\widgets\forms"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\filter editor"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.dfm"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.dfm"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\clsSQLFilterWidget.pas"/>
+    <File Path="..\..\..\application classes\components\widgets\forms\clsSQLFilterWidget.dfm"/>
+    <File Path="..\..\..\application classes\components\widgets\clsSQLFilterDesignerWidget.pas"/>
+    <File Path="..\..\..\application classes\rhea"/>
+    <File Path="..\..\..\application classes\rhea\config"/>
+    <File Path="..\..\..\application classes\rhea\config\clsApplicationConfig.pas"/>
+    <File Path="uRegisterPackage.pas"/>
+    <File Path="ascript2010.dcp"/>
+    <File Path="dbrtl.dcp"/>
+    <File Path="dsnap.dcp"/>
+    <File Path="philadelphia.dcp"/>
+    <File Path="rtl.dcp"/>
+    <File Path="soaprtl.dcp"/>
+    <File Path="vcl.dcp"/>
+    <File Path="vclimg.dcp"/>
+    <File Path="VclSmp.dcp"/>
+    <File Path="VirtualTreesD14.dcp"/>
+  </ProjectSortOrder>
+</BorlandProject>

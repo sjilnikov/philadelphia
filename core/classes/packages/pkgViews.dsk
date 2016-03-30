@@ -1,0 +1,1806 @@
+﻿[Closed Files]
+File_0=TSourceModule,'D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTableViewProxyColumnsVisibilityEditorWidget.pas',0,1,1,52,1,0,0,{{48,2}
+File_1=TSourceModule,'c:\program files\embarcadero\rad studio\7.0\SOURCE\WIN32\RTL\SYS\SysUtils.pas',0,1,3762,1,3783,0,0,,
+File_2=TSourceModule,'c:\program files\embarcadero\rad studio\7.0\source\third party\views\grids\kgrid\source\KGrids.pas',0,1,3256,1,3274,0,0,,
+File_3=TSourceModule,'c:\program files\embarcadero\rad studio\7.0\source\Win32\db\DB.pas',0,1,2515,1,2597,0,0,,
+File_4=TSourceModule,'c:\program files\embarcadero\rad studio\7.0\source\third party\database\zeos lib\src\component\ZAbstractRODataset.pas',0,1,444,13,452,0,0,,
+File_5=TSourceModule,'D:\Projects\Delphi\100 media\application classes\test cases\forms\clsFrmCityList.pas',0,1,39,22,75,0,0,,{1
+File_6=TSourceModule,'D:\Projects\Delphi\100 media\test area\multi events test\clsFrmTest.pas',0,1,999,36,1001,0,0,,
+File_7=TSourceModule,'D:\Projects\Delphi\100 media\application classes\db objects\clsCities.pas',0,1,37,22,56,0,0,,
+
+[Modules]
+Module0=D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dproj
+Module1=default.htm
+Module2=D:\Projects\Delphi\100 media\core\classes\packages\uRegisterPackage.pas
+Module3=D:\Projects\Delphi\100 media\application classes\rhea\config\clsApplicationConfig.pas
+Module4=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas
+Module5=D:\Projects\Delphi\100 media\core\classes\generators\clsAutoIncGenerator.pas
+Module6=D:\Projects\Delphi\100 media\core\classes\models\memory table model\clsMemoryTableModel.pas
+Module7=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractModel.pas
+Module8=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractTableModel.pas
+Module9=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsSQLiteCommandsBuilder.pas
+Module10=D:\Projects\Delphi\100 media\core\classes\db\commands\clsSQLiteCommand.pas
+Module11=D:\Projects\Delphi\100 media\core\classes\db\queries\clsSQLiteQuery.pas
+Module12=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsSQLiteDataBuilder.pas
+Module13=D:\Projects\Delphi\100 media\core\classes\db\connections\clsSQLiteConnection.pas
+Module14=D:\Projects\Delphi\100 media\core\classes\db\connections\factory\clsSQLConnectionsFactory.pas
+Module15=D:\Projects\Delphi\100 media\core\classes\utils\third party\NumeralDate.pas
+Module16=D:\Projects\Delphi\100 media\core\classes\utils\clsStringUtils.pas
+Module17=D:\Projects\Delphi\100 media\core\classes\io\file system\clsFile.pas
+Module18=D:\Projects\Delphi\100 media\core\classes\components\controls\clsRangeSlider.pas
+Module19=D:\Projects\Delphi\100 media\core\classes\components\control proxies\view proxies data replacers\clsTableViewProxyDataReplacer.pas
+Module20=D:\Projects\Delphi\100 media\core\classes\components\control proxies\table view proxy\clsTableViewProxy.pas
+Module21=D:\Projects\Delphi\100 media\core\classes\class utils\clsObjectHelper.pas
+Module22=D:\Projects\Delphi\100 media\core\classes\timer\clsTimer.pas
+Module23=D:\Projects\Delphi\100 media\application classes\components\widgets\clsSQLFilterDesignerWidget.pas
+Module24=D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerWidget.pas
+Module25=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractAggregateModel.pas
+Module26=D:\Projects\Delphi\100 media\core\classes\models\sql aggregate model\clsSQLAggregateModel.pas
+Module27=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas
+Module28=D:\Projects\Delphi\100 media\core\classes\application\clsApplication.pas
+Module29=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterWidget.pas
+Module30=D:\Projects\Delphi\100 media\core\classes\keyboard\clsKeyboard.pas
+Module31=D:\Projects\Delphi\100 media\core\resources\clsResources.pas
+Module32=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree and table view copy paste popup decorator\clsTreeAndTableViewProxyCopyPastePopupDecorator.pas
+Module33=D:\Projects\Delphi\100 media\core\classes\models\sql tree model\clsSQLTreeModel.pas
+Module34=D:\Projects\Delphi\100 media\core\classes\components\control proxies\tree view proxy\clsTreeViewProxy.pas
+Module35=D:\Projects\Delphi\100 media\core\classes\components\controls\clsPopupListView.pas
+Module36=D:\Projects\Delphi\100 media\core\classes\components\completer\views\listView\clsCompleterListView.pas
+Module37=D:\Projects\Delphi\100 media\core\classes\io\log\clsLog.pas
+Module38=D:\Projects\Delphi\100 media\core\classes\db\connections\clsPGSQLConnection.pas
+Module39=D:\Projects\Delphi\100 media\core\classes\components\completer\clsCompleter.pas
+Module40=D:\Projects\Delphi\100 media\core\classes\components\utils\clsComponentUtils.pas
+Module41=D:\Projects\Delphi\100 media\core\classes\dialogs\clsMessageBox.pas
+Module42=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsFormDecorator.pas
+Module43=D:\Projects\Delphi\100 media\core\classes\timer\clsTime.pas
+Module44=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsIncSearchDecorator.pas
+Module45=D:\Projects\Delphi\100 media\core\classes\components\validators\extended validator\clsExtendedValidator.pas
+Module46=D:\Projects\Delphi\100 media\core\classes\components\control proxies\sql table view proxy\clsSQLTableViewProxy.pas
+Module47=D:\Projects\Delphi\100 media\core\classes\components\control proxies\editable view proxies\clsCheckBoxViewProxy.pas
+Module48=D:\Projects\Delphi\100 media\core\classes\components\control proxies\aggregate view proxy\clsAggregateViewProxy.pas
+Module49=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree view proxy popup decorator\clsTreeViewProxyMovePopupDecorator.pas
+Module50=D:\Projects\Delphi\100 media\core\classes\lists\clsIntegerList.pas
+Module51=D:\Projects\Delphi\100 media\core\classes\io\memory\clsMemory.pas
+Module52=D:\Projects\Delphi\100 media\core\classes\db\drivers\uSQLDrivers.pas
+Module53=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsPGSQLDataBuilder.pas
+Module54=D:\Projects\Delphi\100 media\core\classes\db\data builders\factory\clsSQLDataBuildersFactory.pas
+Module55=D:\Projects\Delphi\100 media\core\classes\db\conversion\clsDBTypeConversion.pas
+Module56=D:\Projects\Delphi\100 media\core\classes\db\connections\datapoints\clsSQLDatapoints.pas
+Module57=D:\Projects\Delphi\100 media\core\classes\db\commands\clsPGSQLCommand.pas
+Module58=D:\Projects\Delphi\100 media\core\classes\db\commands\factory\clsSQLCommandsFactory.pas
+Module59=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsPGSQLCommandsBuilder.pas
+Module60=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\factory\clsSQLCommandsBuildersFactory.pas
+Module61=D:\Projects\Delphi\100 media\core\classes\models\sql table model\clsSQLTableModel.pas
+Module62=D:\Projects\Delphi\100 media\core\classes\models\clsTablePagerModel.pas
+Module63=D:\Projects\Delphi\100 media\core\classes\class utils\clsDynamicalObject.pas
+Module64=D:\Projects\Delphi\100 media\core\classes\models\uModels.pas
+Module65=D:\Projects\Delphi\100 media\core\classes\exceptions\clsException.pas
+Module66=D:\Projects\Delphi\100 media\core\classes\class utils\clsClassKit.pas
+Module67=D:\Projects\Delphi\100 media\core\classes\events\clsMulticastEvents.pas
+Module68=D:\Projects\Delphi\100 media\core\classes\singleton\clsSingleton.pas
+Module69=D:\Projects\Delphi\100 media\core\classes\io\debug\clsDebug.pas
+Module70=D:\Projects\Delphi\100 media\core\classes\hashes\md5.pas
+Module71=D:\Projects\Delphi\100 media\core\classes\lists\clsLists.pas
+Module72=D:\Projects\Delphi\100 media\core\classes\variants\clsVariantConversion.pas
+Count=73
+EditWindowCount=1
+
+[D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dproj]
+ModuleType=TBaseProject
+
+[default.htm]
+ModuleType=TURLModule
+
+[D:\Projects\Delphi\100 media\core\classes\packages\uRegisterPackage.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\application classes\rhea\config\clsApplicationConfig.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas]
+ModuleType=TSourceModule
+FormState=1
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\generators\clsAutoIncGenerator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\memory table model\clsMemoryTableModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\clsAbstractModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\clsAbstractTableModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsSQLiteCommandsBuilder.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\clsSQLiteCommand.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\queries\clsSQLiteQuery.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\data builders\clsSQLiteDataBuilder.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\connections\clsSQLiteConnection.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\connections\factory\clsSQLConnectionsFactory.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\utils\third party\NumeralDate.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\utils\clsStringUtils.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\io\file system\clsFile.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\controls\clsRangeSlider.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\view proxies data replacers\clsTableViewProxyDataReplacer.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\table view proxy\clsTableViewProxy.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\class utils\clsObjectHelper.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\timer\clsTimer.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\application classes\components\widgets\clsSQLFilterDesignerWidget.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerWidget.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\clsAbstractAggregateModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\sql aggregate model\clsSQLAggregateModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas]
+ModuleType=TSourceModule
+FormState=1
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\application\clsApplication.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterWidget.pas]
+ModuleType=TSourceModule
+FormState=1
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\keyboard\clsKeyboard.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\resources\clsResources.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\decorators\tree and table view copy paste popup decorator\clsTreeAndTableViewProxyCopyPastePopupDecorator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\sql tree model\clsSQLTreeModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\tree view proxy\clsTreeViewProxy.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\controls\clsPopupListView.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\completer\views\listView\clsCompleterListView.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\io\log\clsLog.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\connections\clsPGSQLConnection.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\completer\clsCompleter.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\utils\clsComponentUtils.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\dialogs\clsMessageBox.pas]
+ModuleType=TSourceModule
+FormState=1
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\decorators\clsFormDecorator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\timer\clsTime.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\decorators\clsIncSearchDecorator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\validators\extended validator\clsExtendedValidator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\sql table view proxy\clsSQLTableViewProxy.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\editable view proxies\clsCheckBoxViewProxy.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\control proxies\aggregate view proxy\clsAggregateViewProxy.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\components\decorators\tree view proxy popup decorator\clsTreeViewProxyMovePopupDecorator.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\lists\clsIntegerList.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\io\memory\clsMemory.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\drivers\uSQLDrivers.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\data builders\clsPGSQLDataBuilder.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\data builders\factory\clsSQLDataBuildersFactory.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\conversion\clsDBTypeConversion.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\connections\datapoints\clsSQLDatapoints.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\clsPGSQLCommand.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\factory\clsSQLCommandsFactory.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsPGSQLCommandsBuilder.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\db\commands\builders\factory\clsSQLCommandsBuildersFactory.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\sql table model\clsSQLTableModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\clsTablePagerModel.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\class utils\clsDynamicalObject.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\models\uModels.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\exceptions\clsException.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\class utils\clsClassKit.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\events\clsMulticastEvents.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\singleton\clsSingleton.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\io\debug\clsDebug.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\hashes\md5.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\lists\clsLists.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\Projects\Delphi\100 media\core\classes\variants\clsVariantConversion.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+ViewCount=73
+CurrentEditView=D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dpk
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
+View10=10
+View11=11
+View12=12
+View13=13
+View14=14
+View15=15
+View16=16
+View17=17
+View18=18
+View19=19
+View20=20
+View21=21
+View22=22
+View23=23
+View24=24
+View25=25
+View26=26
+View27=27
+View28=28
+View29=29
+View30=30
+View31=31
+View32=32
+View33=33
+View34=34
+View35=35
+View36=36
+View37=37
+View38=38
+View39=39
+View40=40
+View41=41
+View42=42
+View43=43
+View44=44
+View45=45
+View46=46
+View47=47
+View48=48
+View49=49
+View50=50
+View51=51
+View52=52
+View53=53
+View54=54
+View55=55
+View56=56
+View57=57
+View58=58
+View59=59
+View60=60
+View61=61
+View62=62
+View63=63
+View64=64
+View65=65
+View66=66
+View67=67
+View68=68
+View69=69
+View70=70
+View71=71
+View72=72
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=0
+State=0
+Left=1688
+Top=1173
+Width=6521
+Height=8644
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=6438
+ClientHeight=8269
+DockedToMainForm=0
+BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
+TopPanelSize=0
+LeftPanelSize=0
+LeftPanelClients=BorlandEditorCodeExplorer@EditWindow0
+LeftPanelData=0000080001000100000019000000426F726C616E64456469746F72436F64654578706C6F726572B20C00000000000000E101000000000000FFFFFFFF
+RightPanelSize=0
+BottomPanelSize=0
+BottomMiddlePanelSize=1352
+BottomMiddlePanelClients=DockSite0,ToDo List,MessageView
+BottomMiddelPanelData=0000080001020200000009000000446F636B53697465300E000000546F446F4C69737457696E646F77B42C0000000000000248050000000000000100000000B42C00000F0000004D65737361676556696577466F726DFFFFFFFF
+
+[View0]
+CustomEditViewType=TWelcomePageView
+WelcomePageURL=bds:/default.htm
+
+[View1]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerWidget.pas
+CursorX=1
+CursorY=67
+TopLine=55
+LeftCol=1
+Elisions=
+Bookmarks={1,204,14}
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\widgets\clsTablePagerWidget.pas
+
+[View2]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\controls\clsRangeSlider.pas
+CursorX=25
+CursorY=200
+TopLine=190
+LeftCol=1
+Elisions=
+Bookmarks={7,38,1}
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\controls\clsRangeSlider.pas
+
+[View3]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\io\memory\clsMemory.pas
+CursorX=9
+CursorY=67
+TopLine=50
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\io\memory\clsMemory.pas
+
+[View4]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\application classes\components\widgets\clsSQLFilterDesignerWidget.pas
+CursorX=45
+CursorY=164
+TopLine=203
+LeftCol=1
+Elisions=
+Bookmarks={1,61,1}
+EditViewName=D:\Projects\Delphi\100 media\application classes\components\widgets\clsSQLFilterDesignerWidget.pas
+
+[View5]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\timer\clsTimer.pas
+CursorX=18
+CursorY=12
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\timer\clsTimer.pas
+
+[View6]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\class utils\clsObjectHelper.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\class utils\clsObjectHelper.pas
+
+[View7]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\sql aggregate model\clsSQLAggregateModel.pas
+CursorX=27
+CursorY=18
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\sql aggregate model\clsSQLAggregateModel.pas
+
+[View8]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractAggregateModel.pas
+CursorX=28
+CursorY=17
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractAggregateModel.pas
+
+[View9]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas
+CursorX=30
+CursorY=533
+TopLine=516
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas
+
+[View10]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\application classes\rhea\config\clsApplicationConfig.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\application classes\rhea\config\clsApplicationConfig.pas
+
+[View11]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\keyboard\clsKeyboard.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\keyboard\clsKeyboard.pas
+
+[View12]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\clsSQLFilterWidget.pas
+CursorX=54
+CursorY=32
+TopLine=19
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View13]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\application\clsApplication.pas
+CursorX=57
+CursorY=12
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\application\clsApplication.pas
+
+[View14]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\completer\clsCompleter.pas
+CursorX=21
+CursorY=12
+TopLine=1
+LeftCol=1
+Elisions={{22,2},{24,13},{'forward declaration of cEditableViewProxy'}}
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\completer\clsCompleter.pas
+
+[View15]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\memory table model\clsMemoryTableModel.pas
+CursorX=21
+CursorY=18
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\memory table model\clsMemoryTableModel.pas
+
+[View16]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\generators\clsAutoIncGenerator.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\generators\clsAutoIncGenerator.pas
+
+[View17]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\completer\views\listView\clsCompleterListView.pas
+CursorX=18
+CursorY=8
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\completer\views\listView\clsCompleterListView.pas
+
+[View18]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\controls\clsPopupListView.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\controls\clsPopupListView.pas
+
+[View19]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsFormDecorator.pas
+CursorX=15
+CursorY=13
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsFormDecorator.pas
+
+[View20]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\dialogs\clsMessageBox.pas
+CursorX=19
+CursorY=25
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\dialogs\clsMessageBox.pas
+
+[View21]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\utils\clsComponentUtils.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\utils\clsComponentUtils.pas
+
+[View22]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree and table view copy paste popup decorator\clsTreeAndTableViewProxyCopyPastePopupDecorator.pas
+CursorX=21
+CursorY=20
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree and table view copy paste popup decorator\clsTreeAndTableViewProxyCopyPastePopupDecorator.pas
+
+[View23]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree view proxy popup decorator\clsTreeViewProxyMovePopupDecorator.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\decorators\tree view proxy popup decorator\clsTreeViewProxyMovePopupDecorator.pas
+
+[View24]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsIncSearchDecorator.pas
+CursorX=9
+CursorY=15
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\decorators\clsIncSearchDecorator.pas
+
+[View25]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\timer\clsTime.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\timer\clsTime.pas
+
+[View26]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\aggregate view proxy\clsAggregateViewProxy.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\aggregate view proxy\clsAggregateViewProxy.pas
+
+[View27]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\editable view proxies\clsCheckBoxViewProxy.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\editable view proxies\clsCheckBoxViewProxy.pas
+
+[View28]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\sql table view proxy\clsSQLTableViewProxy.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\sql table view proxy\clsSQLTableViewProxy.pas
+
+[View29]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\table view proxy\clsTableViewProxy.pas
+CursorX=31
+CursorY=653
+TopLine=637
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\table view proxy\clsTableViewProxy.pas
+
+[View30]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\view proxies data replacers\clsTableViewProxyDataReplacer.pas
+CursorX=43
+CursorY=13
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\view proxies data replacers\clsTableViewProxyDataReplacer.pas
+
+[View31]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\control proxies\tree view proxy\clsTreeViewProxy.pas
+CursorX=17
+CursorY=302
+TopLine=285
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\control proxies\tree view proxy\clsTreeViewProxy.pas
+
+[View32]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\sql tree model\clsSQLTreeModel.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\sql tree model\clsSQLTreeModel.pas
+
+[View33]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\components\validators\extended validator\clsExtendedValidator.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\components\validators\extended validator\clsExtendedValidator.pas
+
+[View34]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas
+CursorX=57
+CursorY=16
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas
+
+[View35]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\resources\clsResources.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\resources\clsResources.pas
+
+[View36]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\clsTablePagerModel.pas
+CursorX=51
+CursorY=78
+TopLine=208
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\clsTablePagerModel.pas
+
+[View37]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\packages\uRegisterPackage.pas
+CursorX=40
+CursorY=20
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\packages\uRegisterPackage.pas
+
+[View38]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\lists\clsIntegerList.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\lists\clsIntegerList.pas
+
+[View39]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\sql table model\clsSQLTableModel.pas
+CursorX=1
+CursorY=365
+TopLine=363
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\sql table model\clsSQLTableModel.pas
+
+[View40]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\factory\clsSQLCommandsBuildersFactory.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\factory\clsSQLCommandsBuildersFactory.pas
+
+[View41]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsPGSQLCommandsBuilder.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsPGSQLCommandsBuilder.pas
+
+[View42]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\factory\clsSQLCommandsFactory.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\factory\clsSQLCommandsFactory.pas
+
+[View43]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\clsPGSQLCommand.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\clsPGSQLCommand.pas
+
+[View44]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\connections\datapoints\clsSQLDatapoints.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\connections\datapoints\clsSQLDatapoints.pas
+
+[View45]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\connections\factory\clsSQLConnectionsFactory.pas
+CursorX=21
+CursorY=20
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\connections\factory\clsSQLConnectionsFactory.pas
+
+[View46]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\connections\clsSQLiteConnection.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\connections\clsSQLiteConnection.pas
+
+[View47]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\clsSQLiteCommand.pas
+CursorX=26
+CursorY=43
+TopLine=25
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\clsSQLiteCommand.pas
+
+[View48]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsSQLiteCommandsBuilder.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\commands\builders\clsSQLiteCommandsBuilder.pas
+
+[View49]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractTableModel.pas
+CursorX=18
+CursorY=15
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractTableModel.pas
+
+[View50]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractModel.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\clsAbstractModel.pas
+
+[View51]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsSQLiteDataBuilder.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsSQLiteDataBuilder.pas
+
+[View52]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\queries\clsSQLiteQuery.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\queries\clsSQLiteQuery.pas
+
+[View53]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\connections\clsPGSQLConnection.pas
+CursorX=8
+CursorY=60
+TopLine=43
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\connections\clsPGSQLConnection.pas
+
+[View54]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\io\log\clsLog.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\io\log\clsLog.pas
+
+[View55]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dpk
+CursorX=14
+CursorY=37
+TopLine=25
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\packages\pkgViews.dpk
+
+[View56]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\io\file system\clsFile.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\io\file system\clsFile.pas
+
+[View57]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\conversion\clsDBTypeConversion.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\conversion\clsDBTypeConversion.pas
+
+[View58]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\data builders\factory\clsSQLDataBuildersFactory.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\data builders\factory\clsSQLDataBuildersFactory.pas
+
+[View59]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsPGSQLDataBuilder.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\data builders\clsPGSQLDataBuilder.pas
+
+[View60]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\db\drivers\uSQLDrivers.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\db\drivers\uSQLDrivers.pas
+
+[View61]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\utils\clsStringUtils.pas
+CursorX=13
+CursorY=12
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\utils\clsStringUtils.pas
+
+[View62]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\utils\third party\NumeralDate.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\utils\third party\NumeralDate.pas
+
+[View63]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\class utils\clsDynamicalObject.pas
+CursorX=14
+CursorY=22
+TopLine=7
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\class utils\clsDynamicalObject.pas
+
+[View64]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\models\uModels.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\models\uModels.pas
+
+[View65]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\exceptions\clsException.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\exceptions\clsException.pas
+
+[View66]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\class utils\clsClassKit.pas
+CursorX=29
+CursorY=6
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\class utils\clsClassKit.pas
+
+[View67]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\events\clsMulticastEvents.pas
+CursorX=3
+CursorY=51
+TopLine=36
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\events\clsMulticastEvents.pas
+
+[View68]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\singleton\clsSingleton.pas
+CursorX=35
+CursorY=26
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\singleton\clsSingleton.pas
+
+[View69]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\io\debug\clsDebug.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\io\debug\clsDebug.pas
+
+[View70]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\hashes\md5.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\hashes\md5.pas
+
+[View71]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\lists\clsLists.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\lists\clsLists.pas
+
+[View72]
+CustomEditViewType=TEditView
+Module=D:\Projects\Delphi\100 media\core\classes\variants\clsVariantConversion.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projects\Delphi\100 media\core\classes\variants\clsVariantConversion.pas
+
+[Watches]
+Count=0
+
+[WatchWindow]
+WatchColumnWidth=120
+WatchShowColumnHeaders=1
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=0
+Top=3510
+Width=2625
+Height=1942
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=2542
+ClientHeight=1567
+TBDockHeight=163
+LRDockWidth=2547
+Dockable=1
+StayOnTop=0
+
+[Breakpoints]
+Count=0
+
+[EmbarcaderoWin32Debugger_AddressBreakpoints]
+Count=0
+
+[Main Window]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=0
+State=0
+Left=0
+Top=0
+Width=10000
+Height=894
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=9917
+ClientHeight=519
+BottomPanelSize=0
+
+[ProjectManager]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=0
+Width=1703
+Height=8019
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1703
+ClientHeight=8019
+TBDockHeight=269
+LRDockWidth=3729
+Dockable=1
+StayOnTop=0
+
+[MessageView]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=23
+Width=6438
+Height=1183
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=6438
+ClientHeight=1183
+TBDockHeight=1183
+LRDockWidth=3521
+Dockable=1
+StayOnTop=0
+
+[ToolForm]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=8214
+Top=5269
+Width=1786
+Height=4538
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=1703
+ClientHeight=4163
+TBDockHeight=5817
+LRDockWidth=1406
+Dockable=1
+StayOnTop=0
+
+[TemplateView]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=8214
+Top=5269
+Width=1786
+Height=4558
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=1703
+ClientHeight=4183
+TBDockHeight=365
+LRDockWidth=271
+Dockable=1
+StayOnTop=0
+Name=120
+Description=334
+filter=1
+
+[DebugLogView]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=2625
+Top=7856
+Width=3484
+Height=2144
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=3401
+ClientHeight=1769
+TBDockHeight=298
+LRDockWidth=3625
+Dockable=1
+StayOnTop=0
+
+[ThreadStatusWindow]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=0
+Top=7856
+Width=2625
+Height=2144
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=2542
+ClientHeight=1769
+TBDockHeight=154
+LRDockWidth=5422
+Dockable=1
+StayOnTop=0
+Column0Width=145
+Column1Width=100
+Column2Width=115
+Column3Width=250
+
+[LocalVarsWindow]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=0
+Top=5442
+Width=2625
+Height=2413
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=2542
+ClientHeight=2038
+TBDockHeight=202
+LRDockWidth=2547
+Dockable=1
+StayOnTop=0
+
+[CallStackWindow]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=0
+Top=1173
+Width=2625
+Height=2346
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=2542
+ClientHeight=1971
+TBDockHeight=163
+LRDockWidth=2547
+Dockable=1
+StayOnTop=0
+
+[TFileExplorerForm]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=21
+Top=808
+Width=2156
+Height=6904
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=2073
+ClientHeight=6529
+TBDockHeight=4587
+LRDockWidth=2271
+Dockable=1
+StayOnTop=0
+
+[FindReferencsForm]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=0
+Width=4385
+Height=1231
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=4385
+ClientHeight=1231
+TBDockHeight=5077
+LRDockWidth=5307
+Dockable=1
+StayOnTop=0
+
+[RefactoringForm]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=0
+Width=4385
+Height=1231
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=4385
+ClientHeight=1231
+TBDockHeight=3827
+LRDockWidth=5307
+Dockable=1
+StayOnTop=0
+
+[ToDo List]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=1
+State=0
+Left=0
+Top=0
+Width=3672
+Height=1183
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=3672
+ClientHeight=1183
+TBDockHeight=1183
+LRDockWidth=3672
+Dockable=1
+StayOnTop=0
+Column0Width=270
+Column1Width=30
+Column2Width=100
+Column3Width=70
+Column4Width=70
+SortOrder=4
+ShowHints=1
+ShowChecked=1
+
+[DataExplorer]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=0
+Width=1703
+Height=8019
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1703
+ClientHeight=8019
+TBDockHeight=4875
+LRDockWidth=7146
+Dockable=1
+StayOnTop=0
+
+[PropertyInspector]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=0
+State=0
+Left=0
+Top=4635
+Width=1688
+Height=5173
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=1604
+ClientHeight=4798
+TBDockHeight=5817
+LRDockWidth=1547
+Dockable=1
+StayOnTop=0
+SplitPos=73
+
+[ModelViewTool]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=1
+State=0
+Left=0
+Top=0
+Width=1703
+Height=8019
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1703
+ClientHeight=8019
+TBDockHeight=4875
+LRDockWidth=5307
+Dockable=1
+StayOnTop=0
+
+[BreakpointWindow]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=6109
+Top=7856
+Width=3891
+Height=2144
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=3807
+ClientHeight=1769
+TBDockHeight=202
+LRDockWidth=6396
+Dockable=1
+StayOnTop=0
+Column0Width=100
+Column1Width=75
+Column2Width=200
+Column3Width=200
+Column4Width=75
+Column5Width=75
+Column6Width=75
+
+[StructureView]
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=0
+State=0
+Left=0
+Top=1173
+Width=1688
+Height=3462
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=1604
+ClientHeight=3087
+TBDockHeight=3462
+LRDockWidth=1672
+Dockable=1
+StayOnTop=0
+
+[BorlandEditorCodeExplorer@EditWindow0]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=1
+State=0
+Left=0
+Top=0
+Width=1469
+Height=8260
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1469
+ClientHeight=8260
+TBDockHeight=8260
+LRDockWidth=1469
+Dockable=1
+StayOnTop=0
+
+[DockHosts]
+DockHostCount=2
+
+[DockSite0]
+HostDockSite=DockBottomCenterPanel
+DockSiteType=1
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=1
+State=0
+Left=0
+Top=0
+Width=4385
+Height=1471
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=4385
+ClientHeight=1471
+TBDockHeight=1471
+LRDockWidth=4385
+Dockable=1
+StayOnTop=0
+TabPosition=1
+ActiveTabID=RefactoringForm
+TabDockClients=RefactoringForm,FindReferencsForm
+
+[DockSite1]
+DockSiteType=1
+PercentageSizes=1
+Create=1
+Visible=1
+Docked=0
+State=0
+Left=8214
+Top=1173
+Width=1786
+Height=8635
+MaxLeft=-5
+MaxTop=-10
+ClientWidth=1703
+ClientHeight=8260
+TBDockHeight=3183
+LRDockWidth=1443
+Dockable=1
+StayOnTop=0
+TabPosition=1
+ActiveTabID=ProjectManager
+TabDockClients=ProjectManager,ModelViewTool,DataExplorer
+

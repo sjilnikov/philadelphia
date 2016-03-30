@@ -1,0 +1,47 @@
+package pkgViews;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+
+requires
+  vcl,
+  rtl,
+  vclimg,
+  soaprtl,
+  dbrtl,
+  dsnap,
+  VclSmp,
+  VirtualTreesD14,
+  ascript2010;
+
+contains
+  uRegisterPackage in 'uRegisterPackage.pas',
+  clsSQLFilterDesignerWidget in '..\..\..\application classes\components\widgets\clsSQLFilterDesignerWidget.pas',
+  clsSQLFilterTemplatesWidget in '..\..\..\application classes\components\widgets\forms\clsSQLFilterTemplatesWidget.pas' {frmSQLFilterTemplates},
+  clsSQLFilterWidget in '..\..\..\application classes\components\widgets\forms\clsSQLFilterWidget.pas' {frmFilter},
+  clsFrmSQLFilterEditor in '..\..\..\application classes\components\widgets\forms\filter editor\clsFrmSQLFilterEditor.pas' {frmSQLFilterEditor},
+  clsApplicationConfig in '..\..\..\application classes\rhea\config\clsApplicationConfig.pas';
+
+end.
